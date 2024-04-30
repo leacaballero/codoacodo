@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CODIGO QUE LE DA UNA FUENTE AL TITULO CON GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <!-- CODIGO QUE LE DA UNA FUENTE A LAS ETIQUETAS CON GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Fjalla+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- CODIGO QUE LE DA UNA FUENTE AL H2 CON GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Fjalla+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- CODIGO QUE LE DA UNA FUENTE A LOS PARRAFOS CON GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<!-- CODIGO QUE LE DA UNA FUENTE AL FOOTER CON GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="icon" href="img/icono.png">
+    
+    <title>Accesorios y autopartes para vehiculos</title>
+    
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+        <header class="header">
+            <img src="img/logo.png" width="200px" alt="Autos">
+            <nav class="main-navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a class="activo" href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+      
+            <main>
+
+                <form>
+                    <h3>
+                        Formulario de contacto
+                    </h3>
+                   <fieldset> 
+                    <legend> INFORMACIÓN BÁSICA</legend>
+                    <!--SIMPLE INPUTS-->
+                    <div class="form_input">
+                        <label>Nombre completo
+                            <input type="text" placeholder="Juan Perez">
+                        </label>
+                    </div>
+                    <div class="form_input">
+                        <label>Email
+                        <input type="email" placeholder="ejemplo@gmail.com">
+                        </label>
+                    </div>
+                    <div class="form_input">
+                        <label>Asunto
+                        <input type="text" placeholder="El asunto de tu mensaje">
+                        </label>
+                    </div>
+                  </fieldset>
+                    <!--SELECT & OPTION-->
+                    <div class="form_input">
+                        <label>Tipo de usuario
+                        <select name="type-of-user">
+                            <option value="user1">Seguidor/a</option>
+                            <option value="user2">Empresa</option>
+                            <option value="user3">Otros</option>
+                        </select>
+                    </label>
+                    </div>
+                    <!--DATALIST & OPTION-->
+                    <div class="form_input">
+                        <label>Referente
+                            <input list="referente" name="referente">
+                        <datalist id="referente" name="type-of-user">
+                            <option value= "Soy Dalto">Un creador de contenido</option>
+                            <option value= "Una empresa">Una empresa del rubro IT</option>
+                            <option value= "Un/a amigo/a">Me recomendó un/a amigo/a</option>
+                        </datalist>
+                    </label>
+                    </div>
+                    <!--TEXTAREA-->
+                    <div class="form_input">
+                        <label>Mensaje
+                        <textarea placeholder="Dejá tu mensaje..." id="mensaje"></textarea>
+                        </label>
+                    </div>
+                    <!---->
+                    <div class="form_input">
+                        <label>Acepto los terminos y condiciones
+                            <input type="checkbox" class="checkbox">
+                        </label>
+                    </div>
+                </form>
+              
+            </main>
+ 
+        <footer>
+            <img src="img/facebook.png" href="https://www.instagram.com/">
+            <img src="img/instagram.png">
+            <img src="img/twitter.png">
+
+            <p>Copyright © 2025 Desarrolladores Codo a Codo. Todos los derechos reservados</p>
+            
+
+
+        </footer>
+
+    
+    
+</body>
+</html>
